@@ -12,7 +12,6 @@ export class AppComponent implements OnInit {
   // Properties
   myHeaderTitle = 'Loading Header ...';
   myFooterTitle = 'Love Financial Tips ?';
-  backGroundImagePath = '/assets/images/blue_sky.jpg';
 
   // Data
   allAssets: Card[] = [];

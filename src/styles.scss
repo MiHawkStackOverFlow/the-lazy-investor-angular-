@@ -1,4 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+  https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_960_720.jpg
+
+*/
+body {
+  background: url('https://cdn.pixabay.com/photo/2013/07/18/10/55/business-163464_960_720.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 :host {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
