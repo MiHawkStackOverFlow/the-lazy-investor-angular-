@@ -7,11 +7,18 @@ import { Card } from '../../model/card';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
+  // Card data
   @Input() card!: Card;
+
+  // Colors
   @Input() backgroundColor: string = '';
   @Input() foregroundColor: string = '';
   @Input() hoverBackgroundColor: string = '';
   @Input() hoverForegroundColor: string = '';
+
+  // Width and Height
+  @Input() width: number  = 200;
+  @Input() height: number = 200;
 
   constructor() { }
 

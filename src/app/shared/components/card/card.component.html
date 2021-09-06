@@ -1,8 +1,15 @@
-<div class="card" appMyHighlight [backgroundColor]="backgroundColor" [foregroundColor]="foregroundColor" [hoverBackgroundColor]="hoverBackgroundColor" [hoverForegroundColor]="hoverForegroundColor">
+<div class="card" appMyHighlight
+    [backgroundColor]="backgroundColor"
+    [foregroundColor]="foregroundColor"
+    [hoverBackgroundColor]="hoverBackgroundColor"
+    [hoverForegroundColor]="hoverForegroundColor"
+    [ngStyle]="{'width': width+'px', 'height': height+'px'}"
+>
   <div class="card-image">
     <img [src]="card.imgSrc" width="150" height="150" />
   </div>
   <div class="card-text">
     <span>{{ card.name }}</span>
   </div>
+  <ng-content></ng-content>
 </div>
