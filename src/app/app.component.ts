@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'the-lazy-investor';
+  backGroundImagePath = '/assets/images/blue_sky.jpg';
 }
