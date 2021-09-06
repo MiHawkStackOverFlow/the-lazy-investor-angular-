@@ -13,7 +13,7 @@ export class FooterComponent implements OnInit {
 
   @Input()
   set title(title: string) {
-    this.footerTitle = (title.toUpperCase()) || `Rate me on GitHub`;
+    this.footerTitle = title || `Rate me on GitHub`;
   }
 
   ngOnInit(): void {  }
