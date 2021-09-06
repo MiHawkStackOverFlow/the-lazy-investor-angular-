@@ -1,15 +1,17 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnChanges {
   @Input('title') headerTitle!: string;
 
   constructor() { }
 
-  ngOnInit(): void {  }
+  ngOnChanges(changes: SimpleChanges) {
+    console.log('test changes', changes);
+  }
 
 }
