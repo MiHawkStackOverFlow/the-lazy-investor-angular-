@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'the-lazy-investor';
+  title = 'The Lazy Investor';
   backGroundImagePath = '/assets/images/blue_sky.jpg';
 }
