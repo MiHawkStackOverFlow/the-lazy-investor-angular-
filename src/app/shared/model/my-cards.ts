@@ -4,7 +4,7 @@ import { Card } from '../model/card';
 export const stocks: Card        = { imgSrc: 'https://upstox.com/app/themes/upstox/dist/img/home/stocks.png', name: 'Stocks' };
 export const crypto: Card        = { imgSrc: 'https://i.pinimg.com/originals/77/c2/05/77c205f27408688b643e1f332a586f53.gif', name: 'Crypto' };
 export const mutualFunds: Card   = { imgSrc: 'https://images.financialexpress.com/2020/10/1-222.jpg', name: 'Mutual Funds' };
-export const goldAndSilver: Card = { imgSrc: 'https://thumbs.dreamstime.com/z/flying-gold-silver-dollars-coins-symbol-united-states-currency-vector-cartoon-style-isolated-white-background-usa-102377936.jpg', name: 'Gold & Silver' };
+export const goldAndSilver: Card = { imgSrc: 'https://cbmint.com/pub/media/wysiwyg/CBMint_Bullion_Coins.jpg', name: 'Gold & Silver' };
 
 
 // Liabilties
