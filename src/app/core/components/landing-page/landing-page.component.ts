@@ -7,8 +7,7 @@ import { assets, liabilities } from '../../../shared/model/my-cards';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
   // Data
