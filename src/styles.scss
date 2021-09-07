@@ -45,7 +45,7 @@ p {
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #1976d2;
+  background-color: black;
   color: white;
   font-weight: 600;
 }
@@ -74,6 +74,12 @@ p {
   margin: 82px auto 32px;
   padding: 0 16px;
   // max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-body {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -240,7 +246,7 @@ a:hover {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   line-height: 20px;

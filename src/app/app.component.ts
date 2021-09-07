@@ -13,16 +13,10 @@ export class AppComponent implements OnInit {
   myHeaderTitle = 'Loading Header ...';
   myFooterTitle = 'Love Financial Tips ?';
 
-  // Data
-  allAssets: Card[] = [];
-  allLiabilities: Card[] = [];
-
   // Observables
   timer!: Subscription;
 
   ngOnInit() {
-    this.allAssets = assets;
-    this.allLiabilities = liabilities;
     this.timer = timer(3000, 1000).subscribe(() => { this.myHeaderTitle = 'The Lazy Investor' });
   }
 

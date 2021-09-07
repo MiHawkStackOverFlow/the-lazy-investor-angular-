@@ -1,33 +1,5 @@
 <app-header [title]="myHeaderTitle"></app-header>
-
-<main class="content" role="main">
-
-  <!-- Assets -->
-  <h2>Assets</h2>
-  <h3 style="padding: 5px;" appMyHighlight [backgroundColor]="'lightblue'" [foregroundColor]="'black'" [hoverBackgroundColor]="'lightblue'" [hoverForegroundColor]="'black'">Assets put money in your pocket.</h3>
-  <h4 style="padding: 5px; background-color: #E9EAE0;">It is advisable to focus on making assets grow as much as possible and put money here. </h4>
-
-  <div class="card-container">
-    <ng-container *ngFor="let asset of allAssets;">
-      <app-card [card]="asset" [backgroundColor]="'#fafafa'" [foregroundColor]="'black'" [hoverBackgroundColor]="'lightblue'" [hoverForegroundColor]="'black'"></app-card>
-    </ng-container>
-  </div>
-
-  <!-- Liabilities -->
-  <h2>Liabilities</h2>
-  <h3 style="padding: 5px; background-color: #FF8A8A;">Liabilities take money out of your pocket.</h3>
-  <h4 style="padding: 5px; background-color: #E9EAE0;">It is advisable to focus not to take liabilities as much as possible and not to put money here unless necessary. </h4>
-
-  <input type="hidden" #selection>
-
-  <div class="card-container">
-    <ng-container *ngFor="let asset of allLiabilities;">
-      <app-card [card]="asset" [backgroundColor]="'#fafafa'" [foregroundColor]="'black'" [hoverBackgroundColor]="'#FF8A8A'" [hoverForegroundColor]="'black'"></app-card>
-    </ng-container>
-  </div>
-
+<main class="main-body" role="main">
   <router-outlet></router-outlet>
-
-  <!-- Footer -->
   <app-footer [title]="myFooterTitle" (goToGithub)="openGitHubTab($event)"></app-footer>
 </main>
