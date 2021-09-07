@@ -9,18 +9,11 @@
   <h1> Find out some of the latest cryptocurrencies and start investing through a crypto exchange </h1>
   <div class="crypto-content">
     <div class="page-links">
-      <button class="crypto-link-button">Cards View</button>
-      <button class="crypto-link-button">List View</button>
+      <button class="crypto-link-button" [ngStyle]="{'background-color': viewType ? 'blue' : '#73c7af'}">Cards View</button>
+      <button class="crypto-link-button" [ngStyle]="{'background-color': !viewType ? 'blue' : '#73c7af'}">List View</button>
     </div>
   </div>
-  <h1>Countries Which Allow Cryptocurrency As Legal Tender</h1>
-  <p class="crypto-content">
-    Below we list the countries and regions that have passed legislation to enable cryptocurrency to be used as legal tender.
-    We also listed some names for you to consider which country will be next to pass their own laws.
-  </p>
-  <div class="crypto-content">
-    <ol>
-      <li *ngFor="let country of legalCryptoCountries">{{ country }}</li>
-    </ol>
+  <div class="crypto-cards">
+    <app-crypto-cards></app-crypto-cards>
   </div>
 </section>

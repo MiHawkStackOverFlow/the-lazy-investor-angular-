@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription, timer } from 'rxjs';
 import { Card } from './shared/model/card';
-import { assets, liabilities } from './shared/model/my-cards';
+import { assets, liabilities } from './shared/model/assets-and-liabilities';
 
 @Component({
   selector: 'app-root',

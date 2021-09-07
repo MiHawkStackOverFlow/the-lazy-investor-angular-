@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { Card } from '../../../shared/model/card';
 import { Assets } from '../../../shared/model/assets';
-import { assets, liabilities } from '../../../shared/model/my-cards';
+import { assets, liabilities } from '../../../shared/model/assets-and-liabilities';
 
 @Component({
   selector: 'app-landing-page',

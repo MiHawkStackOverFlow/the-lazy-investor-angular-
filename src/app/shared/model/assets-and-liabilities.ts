@@ -1,4 +1,4 @@
-import { Card } from '../model/card';
+import { Card } from './card';
 
 // Assets
 export const stocks: Card        = { imgSrc: 'https://upstox.com/app/themes/upstox/dist/img/home/stocks.png', name: 'Stocks' };
