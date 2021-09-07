@@ -12,4 +12,9 @@ export class CryptoMainComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void { }
+
+  changeView(view: string) {
+    if (this.viewType === view) { return; }
+    else { this.viewType = view; }
+  }
 }

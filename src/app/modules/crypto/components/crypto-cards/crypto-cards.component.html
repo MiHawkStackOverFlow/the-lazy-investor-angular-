@@ -1,8 +1,4 @@
 <section class="cards-content">
-  <h2>Top Cryptos</h2>
-  <h3 style="padding: 5px;" appMyHighlight [backgroundColor]="'lightblue'" [foregroundColor]="'black'" [hoverBackgroundColor]="'lightblue'" [hoverForegroundColor]="'black'">Top 5 Cryptos by Market Cap.</h3>
-  <h4 style="padding: 5px; background-color: #E9EAE0;">It is advisable to have 80% investment into Bitcoin and Ethereum and 20% into other altcoins as crypto market is volatile.</h4>
-
   <div class="card-container">
     <ng-container *ngFor="let crypto of allListedCrypto;">
       <app-card [card]="{ imgSrc: crypto.imgSrc, name: crypto.name }"

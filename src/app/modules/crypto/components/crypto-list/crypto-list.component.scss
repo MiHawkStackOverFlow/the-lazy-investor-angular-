@@ -1,0 +1,28 @@
+#crypto-list {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#crypto-list td, #crypto-list th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#crypto-list td:hover {
+  cursor: pointer;
+}
+
+#crypto-list tr:nth-child(even){background-color: #f2f2f2;}
+
+#crypto-list tr:hover {background-color: #ddd; }
+
+#crypto-list th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: skyblue;
+  color: white;
+  text-align: center;
+}

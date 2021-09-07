@@ -1,1 +1,16 @@
-<p>crypto-list works!</p>
+<table id="crypto-list">
+  <tr>
+    <th>Ranking</th>
+    <th>Name</th>
+    <th>Value</th>
+    <th>Market Capitalization</th>
+    <th>Circulation Supply</th>
+  </tr>
+  <tr *ngFor="let crypto of allListedCrypto;">
+    <td>{{ crypto.ranking }}</td>
+    <td>{{ crypto.name }}</td>
+    <td>{{ crypto.value | currency }}</td>
+    <td>{{ crypto.marketCap }}</td>
+    <td>{{ crypto.circulationSupply }}</td>
+  </tr>
+</table>
