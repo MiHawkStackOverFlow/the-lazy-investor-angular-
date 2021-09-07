@@ -6,12 +6,16 @@ import { CryptoRoutingModule } from './crypto-routing.module';
 import { CryptoMainComponent } from './components/crypto-main/crypto-main.component';
 import { CryptoCardsComponent } from './components/crypto-cards/crypto-cards.component';
 import { CryptoListComponent } from './components/crypto-list/crypto-list.component';
+import { CryptoDetailsComponent } from './components/crypto-details/crypto-details.component';
+import { CryptoComponent } from './components/crypto/crypto.component';
 
 @NgModule({
   declarations: [
     CryptoMainComponent,
     CryptoCardsComponent,
-    CryptoListComponent
+    CryptoListComponent,
+    CryptoDetailsComponent,
+    CryptoComponent
   ],
   imports: [
     CommonModule,

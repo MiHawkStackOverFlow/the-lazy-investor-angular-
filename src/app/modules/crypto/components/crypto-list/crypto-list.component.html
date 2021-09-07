@@ -6,7 +6,7 @@
     <th>Market Capitalization</th>
     <th>Circulation Supply</th>
   </tr>
-  <tr *ngFor="let crypto of allListedCrypto;">
+  <tr *ngFor="let crypto of allListedCrypto;" routerLink="/asset-crypto/crypto/{{ crypto.ranking }}">
     <td>{{ crypto.ranking }}</td>
     <td>{{ crypto.name }}</td>
     <td>{{ crypto.value | currency }}</td>

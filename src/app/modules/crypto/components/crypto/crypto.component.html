@@ -1,0 +1,27 @@
+<section class="content">
+  <h1>What Is Cryptocurrency?</h1>
+  <div class="crypto-content">
+    A cryptocurrency is a digital or virtual currency that is secured by cryptography, which makes it nearly impossible to counterfeit or double-spend.
+    Many cryptocurrencies are decentralized networks based on blockchain technology—a distributed ledger enforced by a disparate network of computers.
+    A defining feature of cryptocurrencies is that they are generally not issued by any central authority,
+    rendering them theoretically immune to government interference or manipulation.
+  </div>
+  <div class="crypto-info">
+    <h2>Top Cryptos</h2>
+    <h3 style="padding: 5px;" appMyHighlight [backgroundColor]="'lightblue'" [foregroundColor]="'black'" [hoverBackgroundColor]="'lightblue'" [hoverForegroundColor]="'black'">Top 5 Cryptos by Market Cap.</h3>
+    <h4 style="padding: 5px; background-color: #E9EAE0;">It is advisable to have 80% investment into Bitcoin and Ethereum and 20% into other altcoins as crypto market is volatile.</h4>
+  </div>
+  <div class="crypto-content">
+    <div class="page-links">
+      <button class="crypto-link-button" [ngStyle]="{'background-color': (viewType === 'Cards') ? 'blue' : '#73c7af'}" (click)="changeView('Cards')">Cards View</button>
+      <button class="crypto-link-button" [ngStyle]="{'background-color': (viewType === 'List') ? 'blue' : '#73c7af'}" (click)="changeView('List')">List View</button>
+    </div>
+  </div>
+  <div class="crypto-cards" *ngIf="viewType === 'Cards'">
+    <app-crypto-cards></app-crypto-cards>
+  </div>
+  <div *ngIf="viewType === 'List'" style="width: 80%;">
+    <app-crypto-list></app-crypto-list>
+  </div>
+</section>
+
