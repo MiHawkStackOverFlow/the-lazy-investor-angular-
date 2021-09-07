@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { registerLocaleData } from '@angular/common';
+
+import localeIn from '@angular/common/locales/en-IN';
+registerLocaleData(localeIn);
+
 import { SharedModule } from '../../shared/shared.module';
 import { CryptoRoutingModule } from './crypto-routing.module';
 import { CryptoMainComponent } from './components/crypto-main/crypto-main.component';

@@ -6,8 +6,13 @@
                 [foregroundColor]="'black'"
                 [hoverBackgroundColor]="'lightblue'"
                 [hoverForegroundColor]="'black'"
+                [width]="200"
+                [height]="250"
                 routerLink="/asset-crypto/crypto/{{ crypto.ranking }}"
-      ></app-card>
+      >
+        <!-- <h5 style="margin:0;">Price (USD): {{ crypto.value | currency }}</h5> -->
+        <h5>Price (INR): {{ (crypto.value * 75) | currency : 'INR' : 'symbol': '1.0' : 'en-IN' }}</h5>
+      </app-card>
     </ng-container>
   </div>
 </section>
