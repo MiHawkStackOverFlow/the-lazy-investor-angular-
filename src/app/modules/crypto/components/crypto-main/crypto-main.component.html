@@ -1,3 +1,26 @@
 <section class="content">
-  <p>crypto-main works!</p>
+  <h1>What Is Cryptocurrency?</h1>
+  <div class="crypto-content">
+    A cryptocurrency is a digital or virtual currency that is secured by cryptography, which makes it nearly impossible to counterfeit or double-spend.
+    Many cryptocurrencies are decentralized networks based on blockchain technology—a distributed ledger enforced by a disparate network of computers.
+    A defining feature of cryptocurrencies is that they are generally not issued by any central authority,
+    rendering them theoretically immune to government interference or manipulation.
+  </div>
+  <h1> Find out some of the latest cryptocurrencies and start investing through a crypto exchange </h1>
+  <div class="crypto-content">
+    <div class="page-links">
+      <button class="crypto-link-button">Cards View</button>
+      <button class="crypto-link-button">List View</button>
+    </div>
+  </div>
+  <h1>Countries Which Allow Cryptocurrency As Legal Tender</h1>
+  <p class="crypto-content">
+    Below we list the countries and regions that have passed legislation to enable cryptocurrency to be used as legal tender.
+    We also listed some names for you to consider which country will be next to pass their own laws.
+  </p>
+  <div class="crypto-content">
+    <ol>
+      <li *ngFor="let country of legalCryptoCountries">{{ country }}</li>
+    </ol>
+  </div>
 </section>

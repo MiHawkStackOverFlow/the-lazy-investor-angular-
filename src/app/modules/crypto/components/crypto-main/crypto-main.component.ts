@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crypto-main.component.scss']
 })
 export class CryptoMainComponent implements OnInit {
+  legalCryptoCountries: string[] = ['El Salvador', 'India', 'USA', 'Russia', 'Australia'];
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
 }
