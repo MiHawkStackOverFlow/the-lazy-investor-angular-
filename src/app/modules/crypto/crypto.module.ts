@@ -3,9 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../../shared/shared.module';
 import { CryptoRoutingModule } from './crypto-routing.module';
+import { CryptoMainComponent } from './components/crypto-main/crypto-main.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CryptoMainComponent
+  ],
   imports: [
     CommonModule,
     CryptoRoutingModule,

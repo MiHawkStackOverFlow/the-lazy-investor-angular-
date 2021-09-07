@@ -6,7 +6,11 @@ import { LandingPageComponent } from './core/components/landing-page/landing-pag
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: LandingPageComponent }
+  { path: 'home', component: LandingPageComponent },
+  {
+    path: 'crypto',
+    loadChildren: () => import('./modules/crypto/crypto.module').then(m => m.CryptoModule)
+  }
 ];
 
 @NgModule({
