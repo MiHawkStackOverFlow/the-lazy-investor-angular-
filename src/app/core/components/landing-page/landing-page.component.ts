@@ -26,6 +26,9 @@ export class LandingPageComponent implements OnInit {
       case Assets.Crypto:
         this.router.navigateByUrl('/asset-crypto');
         break;
+      case Assets.FixedDeposits:
+        this.router.navigateByUrl('/asset-fd');
+        break;
       default:
         break;
     }

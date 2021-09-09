@@ -2,5 +2,6 @@ export enum Assets {
   Stocks = 'Stocks',
   Crypto = 'Crypto',
   MutualFunds = 'Mutual Funds',
-  GoldAndSilver = 'Gold & Silver'
+  GoldAndSilver = 'Gold & Silver',
+  FixedDeposits = 'Fixed Deposits'
 }

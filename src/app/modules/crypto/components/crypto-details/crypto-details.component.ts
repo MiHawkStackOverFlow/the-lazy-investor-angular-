@@ -13,8 +13,7 @@ export class CryptoDetailsComponent implements OnInit {
   selectedCrypto!: CryptoCurrency | undefined;
   allListedCrypto: CryptoCurrency[] = allCryptos;
 
-  constructor( private route: ActivatedRoute,
-               private location: Location) { }
+  constructor( private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.getCrypto();

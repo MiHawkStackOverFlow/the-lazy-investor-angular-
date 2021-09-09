@@ -10,6 +10,10 @@ export const routes: Routes = [
   {
     path: 'asset-crypto',
     loadChildren: () => import('./modules/crypto/crypto.module').then(m => m.CryptoModule)
+  },
+  {
+    path: 'asset-fd',
+    loadChildren: () => import('./modules/fixed-deposits/fixed-deposits.module').then(m => m.FixedDepositsModule)
   }
 ];
 
