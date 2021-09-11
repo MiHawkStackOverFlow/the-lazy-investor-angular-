@@ -1,3 +1,89 @@
-<section class="content">
-  <div>My Form starts here</div>
+<section class="fd-content">
+  <div class="row">
+    <form class="col-md-6 box-black" [formGroup]="fdDetailsForm">
+
+      <div class="form-group form-section">
+        <label class="col-form-label main-labels">Type Of Customer</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Default radio
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Default radio
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group form-section">
+        <label class="col-form-label main-labels">Type of FD</label>
+        <select class="form-control">
+          <option>Default select1</option>
+          <option>Default select2</option>
+          <option>Default select3</option>
+        </select>
+      </div>
+
+      <div class="form-group form-section">
+        <label for="exampleInputPassword1" class="main-labels">Date Of FD</label>
+        <label for="exampleInputPassword1" style="margin: 10px; display: block;">{{ currentDate | date:'dd-MM-yyyy'}}</label>
+      </div>
+
+      <div class="form-group form-section">
+        <label for="exampleInputPassword1" class="main-labels">Amount of Deposit</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Amount">
+      </div>
+
+      <div class="form-group form-section">
+        <label for="exampleInputPassword1">Tenure</label>
+      </div>
+
+      <div class="form-group form-section">
+        <label class="col-form-label main-labels">Select Tenure</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option2" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Default radio
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option2" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Default radio
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group form-section">
+        <label class="col-form-label main-labels">Years</label>
+        <select class="form-control">
+          <option>Default select1</option>
+          <option>Default select2</option>
+          <option>Default select3</option>
+        </select>
+      </div>
+
+      <div class="form-group form-section">
+        <label class="col-form-label main-labels">Months</label>
+        <select class="form-control">
+          <option>Default select1</option>
+          <option>Default select2</option>
+          <option>Default select3</option>
+        </select>
+      </div>
+
+      <div class="form-group form-section">
+        <label for="exampleInputPassword1" class="main-labels">Days</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Days">
+      </div>
+
+      <button type="submit" class="btn btn-primary form-section">Submit</button>
+    </form>
+    <div class="col-md-6 box-black">
+      Details
+    </div>
+  </div>
 </section>

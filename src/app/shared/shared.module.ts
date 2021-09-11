@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // Directives
 import { MyHighlightDirective } from './directives/my-highlight.directive';
@@ -11,11 +12,13 @@ import { CardComponent } from './components/card/card.component';
     MyHighlightDirective
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   exports: [
     CardComponent,
-    MyHighlightDirective
+    MyHighlightDirective,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }
