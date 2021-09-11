@@ -5,11 +5,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 // Directives
 import { MyHighlightDirective } from './directives/my-highlight.directive';
 import { CardComponent } from './components/card/card.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
     CardComponent,
-    MyHighlightDirective
+    MyHighlightDirective,
+    SpinnerComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { CardComponent } from './components/card/card.component';
   exports: [
     CardComponent,
     MyHighlightDirective,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SpinnerComponent
   ]
 })
 export class SharedModule { }

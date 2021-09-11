@@ -1,5 +1,10 @@
 <app-header [title]="myHeaderTitle"></app-header>
 <main class="main-body" role="main">
-  <router-outlet></router-outlet>
-  <app-footer [title]="myFooterTitle" (goToGithub)="openGitHubTab($event)"></app-footer>
+  <ng-container *ngIf="!spinner.active">
+    <router-outlet></router-outlet>
+    <app-footer [title]="myFooterTitle" (goToGithub)="openGitHubTab($event)"></app-footer>
+  </ng-container>
+  <ng-container *ngIf="spinner.active">
+    <app-spinner></app-spinner>
+  </ng-container>
 </main>
