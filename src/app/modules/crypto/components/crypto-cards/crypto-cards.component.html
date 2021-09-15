@@ -10,8 +10,7 @@
                 [height]="250"
                 routerLink="/asset-crypto/crypto/{{ crypto.ranking }}"
       >
-        <!-- <h5 style="margin:0;">Price (USD): {{ crypto.value | currency }}</h5> -->
-        <h5>Price (INR): {{ (crypto.value * 75) | currency : 'INR' : 'symbol': '1.0' : 'en-IN' }}</h5>
+        <h6>Price (INR): {{ (crypto.value * 75) | currency : 'INR' : 'symbol': '1.0' : 'en-IN' }}</h6>
       </app-card>
     </ng-container>
   </div>
