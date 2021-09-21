@@ -1,0 +1,34 @@
+.stock-content {
+  color: black;
+  font-size: large;
+  padding: 10px;
+}
+
+.page-links {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.stock-link-button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.stock-cards {
+  color: black;
+  font-size: large;
+}
+
+.stock-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
