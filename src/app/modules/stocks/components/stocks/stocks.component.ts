@@ -16,15 +16,26 @@ export class StocksComponent implements OnInit {
 
   constructor(private stockService: StockService) {
     this.subscription = this.stockService.stockSelected$.subscribe((stock) => {
-      this.allStocks = this.allStocks.filter((myStock) => stock.id !== myStock.id);
-      this.selectedStocks.push(stock);
+      const foundInAllStocks = this.allStocks.some(item => item.id === stock.id);
+      if (foundInAllStocks) {
+        this.allStocks = this.allStocks.filter((myStock) => stock.id !== myStock.id);
+        this.selectedStocks.push(stock);
+      } else {
+        this.selectedStocks = this.selectedStocks.filter((myStock) => stock.id !== myStock.id);
+        this.allStocks.push(stock);
+      }
       // remove dups for now
       this.selectedStocks = this.selectedStocks.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
       this.allStocks = this.allStocks.filter((v, i, a) => a.findIndex(t => t.id === v.id) === i);
+      // sort
+      this.selectedStocks.sort((a, b) => { return a.id - b.id });
+      this.allStocks.sort((a, b) => { return a.id - b.id });
     });
   }
 
-  ngOnInit(): void {  }
+  ngOnInit(): void {
+    this.allStocks.sort((a, b) => { return a.id - b.id });
+  }
 
   ngOnDestroy() {
     // prevent memory leak when component destroyed

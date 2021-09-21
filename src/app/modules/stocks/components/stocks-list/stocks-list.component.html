@@ -7,7 +7,7 @@
   <tr *ngFor="let stock of allListedStocks;" (click)="selectStock(stock)">
     <td>{{ stock.id }}</td>
     <td>{{ stock.name }}</td>
-    <td>{{ stock.value | currency }}</td>
+    <td>{{ stock.value | currency : 'INR' : 'symbol': '1.0' : 'en-IN' }}</td>
   </tr>
 </table>
 
