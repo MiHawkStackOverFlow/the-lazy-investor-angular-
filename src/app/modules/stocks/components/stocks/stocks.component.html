@@ -7,11 +7,13 @@
     <h2>Top stocks</h2>
     <h3 style="padding: 5px;" appMyHighlight [backgroundColor]="'lightblue'" [foregroundColor]="'black'" [hoverBackgroundColor]="'lightblue'" [hoverForegroundColor]="'black'">Top 5 stocks by Market Demand.</h3>
   </div>
-  <div class="stock-cards">
-    Table1
-  </div>
-  <div class="stock-cards">
-    Table2
+  <div class="row">
+    <div class="col-md-6">
+      <app-stocks-list [allListedStocks]="allStocks"></app-stocks-list>
+    </div>
+    <div class="col-md-6">
+      <app-stocks-list [allListedStocks]="selectedStocks"></app-stocks-list>
+    </div>
   </div>
 </section>
 

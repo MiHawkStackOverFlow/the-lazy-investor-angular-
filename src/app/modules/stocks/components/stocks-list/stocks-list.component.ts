@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { allStocks } from '../../model/all-stocks';
+import { Component, Input, OnInit } from '@angular/core';
 import { Stock } from '../../model/stock';
 
 @Component({
@@ -8,7 +7,8 @@ import { Stock } from '../../model/stock';
   styleUrls: ['./stocks-list.component.scss']
 })
 export class StocksListComponent implements OnInit {
-  allListedStocks: Stock[] = allStocks;
+  @Input('allListedStocks') allListedStocks!: Stock[];
+
   constructor() { }
 
   ngOnInit(): void {

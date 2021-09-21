@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { allStocks } from '../../model/all-stocks';
+import { Stock } from '../../model/stock';
 
 @Component({
   selector: 'app-stocks',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stocks.component.scss']
 })
 export class StocksComponent implements OnInit {
+  allStocks: Stock[] = allStocks;
+  selectedStocks: Stock[] = [];
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
 
 }
