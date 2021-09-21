@@ -1,7 +1,7 @@
 <section class="cards-content">
   <div class="card-container">
     <ng-container *ngFor="let crypto of allListedCrypto;">
-      <app-card [card]="{ imgSrc: crypto.imgSrc, name: crypto.name }"
+      <app-card [card]="{ id: crypto.ranking, imgSrc: crypto.imgSrc, name: crypto.name }"
                 [backgroundColor]="'#fafafa'"
                 [foregroundColor]="'black'"
                 [hoverBackgroundColor]="'lightblue'"
