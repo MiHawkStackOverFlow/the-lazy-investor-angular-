@@ -14,6 +14,10 @@ export const routes: Routes = [
   {
     path: 'asset-fd',
     loadChildren: () => import('./modules/fixed-deposits/fixed-deposits.module').then(m => m.FixedDepositsModule)
+  },
+  {
+    path: 'asset-stocks',
+    loadChildren: () => import('./modules/stocks/stocks.module').then(m => m.StocksModule)
   }
 ];
 

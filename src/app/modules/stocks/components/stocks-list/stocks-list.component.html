@@ -1,0 +1,13 @@
+<table id="stock-list">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Value</th>
+  </tr>
+  <tr *ngFor="let stock of allListedStocks;">
+    <td>{{ stock.id }}</td>
+    <td>{{ stock.name }}</td>
+    <td>{{ stock.value | currency }}</td>
+  </tr>
+</table>
+
