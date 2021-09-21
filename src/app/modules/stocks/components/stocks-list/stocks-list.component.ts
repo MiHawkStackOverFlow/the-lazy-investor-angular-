@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Stock } from '../../model/stock';
+import { StockService } from '../../services/stock.service';
 
 @Component({
   selector: 'app-stocks-list',
@@ -9,9 +10,12 @@ import { Stock } from '../../model/stock';
 export class StocksListComponent implements OnInit {
   @Input('allListedStocks') allListedStocks!: Stock[];
 
-  constructor() { }
+  constructor(private stockService: StockService) { }
 
-  ngOnInit(): void {
+  selectStock(stock: Stock) {
+    this.stockService.addSelectedStock(stock);
   }
+
+  ngOnInit(): void {  }
 
 }
